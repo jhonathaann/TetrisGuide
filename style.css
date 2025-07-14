@@ -1,0 +1,55 @@
+/* ===== ESTILOS GERAIS (CENTRALIZADO) ===== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center; /* Centraliza todo o texto */
+}
+
+/* Container principal para limitar largura */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Alinha o conteúdo interno à esquerda */
+}
+
+/* ===== HEADER (JÁ CENTRALIZADO POR PADRÃO) ===== */
+header {
+    background: #1a1a2e;
+    color: #ffd700;
+    padding: 1.5rem;
+    border-bottom: 4px solid #ff5252;
+}
+
+/* ===== SEÇÕES (CARDS CENTRALIZADOS) ===== */
+.move-list, .move-details, .step {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto 20px; /* Centraliza horizontalmente */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #1a1a2e;
+    max-width: 700px; /* Largura máxima dos cards */
+}
+
+/* ===== IMAGENS (CENTRALIZADAS) ===== */
+.step img, .in-game-images {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* ===== TÍTULOS (CENTRALIZADOS) ===== */
+h2, h3 {
+    text-align: center; /* Centraliza títulos */
+}
+
+h2 {
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+    display: inline-block; /* Para a borda não ocupar linha toda */
+}
