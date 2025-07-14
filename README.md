@@ -2,7 +2,7 @@
 
 Um site simples que te ensina como realizar algumas jogadas especiais no Tetris 
 
-🔗 **Acesse o site aqui:** [TetrisGuide](https://github.com/jhonathaann/TetrisGuide/)  
+🔗 **Acesse o site aqui:** [TetrisGuide](https://jhonathaann.github.io/TetrisGuide/)  
 
 ## Objetivo  
 - Explicar algumas das principais jogadas dentro do Tetris.  
