@@ -53,3 +53,17 @@ h2 {
     padding-bottom: 5px;
     display: inline-block; /* Para a borda não ocupar linha toda */
 }
+
+/* Adicione isso ao seu CSS existente */
+.in-game-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para linha seguinte se necessário */
+}
+
+.in-game-images img {
+    height: 200px; /* Defina a altura desejada para todas as imagens */
+    width: auto; /* Mantém a proporção original */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+}
