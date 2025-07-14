@@ -67,3 +67,41 @@ h2 {
     width: auto; /* Mantém a proporção original */
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
+
+/* ===== RODAPE ===== */
+.site-footer {
+    background: #1a1a2e;
+    color: #ffd700;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #ff5252;
+}
+
+.site-footer p {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-links a:hover {
+    color: #ff5252;
+}
+
+/* Se não estiver usando Font Awesome, adicione isto no <head> do seu HTML:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+*/
