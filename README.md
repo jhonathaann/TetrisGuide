@@ -12,7 +12,7 @@ Um site simples que te ensina como realizar algumas jogadas especiais no Tetris
 ## Tecnologias Utilizadas  
 - HTML5  
 - CSS3  
-- JavaScript, inclua aqui  
+- JavaScript 
 
 ---
 
