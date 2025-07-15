@@ -71,20 +71,21 @@
  }
 
  .combo-pecas {
-     background: #101f24;
+     background: #aac7d8;
      padding: 20px;
      border-radius: 5px;
      margin: 20px 0;
      text-align: center;
  }
 
-.combo-pecas2 {
-    background: #101f24;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
-    text-align: center;
+  .combo-pecas2 {
+     background: #bbbbce;
+     padding: 20px;
+     border-radius: 5px;
+     margin: 20px 0;
+     text-align: center;
  }
+
 
  .tip-box {
      background: #fff8e1;
