@@ -71,11 +71,19 @@
  }
 
  .combo-pecas {
-     background: #e8f4f8;
+     background: #101f24;
      padding: 20px;
      border-radius: 5px;
      margin: 20px 0;
      text-align: center;
+ }
+
+.combo-pecas2 {
+    background: #101f24;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
  }
 
  .tip-box {
