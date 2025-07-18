@@ -278,3 +278,16 @@ input[type="checkbox"]:checked::after {
         grid-template-columns: 1fr;
     }
 }
+.combo-pecas-exemplos {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se necessário */
+    gap: 20px; /* Espaço entre as imagens */
+    margin: 20px 0; /* Margem superior e inferior para separar do conteúdo */
+}
+
+.combo-pecas-exemplos img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+}
