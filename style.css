@@ -70,13 +70,35 @@
      margin: 20px 0;
  }
 
- .combo-pecas {
-     background: #aac7d8;
-     padding: 20px;
-     border-radius: 5px;
-     margin: 20px 0;
-     text-align: center;
- }
+.combo-pecas {
+    background: #aac7d8;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.combo-pecas img {
+    width: 120px;
+    height: 94px;
+    object-fit: contain;
+}
+
+/* ajuste para a ultima linha com 3 peças */
+.combo-pecas img:nth-child(n+5) {
+    grid-column: span 1;
+}
+
+/* centralizando as ultimas 3 peças*/
+@media (min-width: 768px) {
+    .combo-pecas img:nth-child(5) {
+        grid-column: 2;
+    }
+}
 
   .combo-pecas2 {
      background: #bbbbce;
