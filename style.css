@@ -1,91 +1,159 @@
- body {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     background-color: #f5f5f5;
- }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
 
- /* barra lateral */
- .sidebar {
-     width: 250px;
-     background-color: #2c3e50;
-     color: white;
-     height: 100vh;
-     position: fixed;
-     padding: 20px;
-     box-sizing: border-box;
- }
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
 
- .sidebar h2 {
-     color: #f39c12;
-     text-align: center;
- }
+.sidebar h2 {
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #3e5166;
+}
 
- .sidebar ul {
-     list-style: none;
-     padding: 0;
- }
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
- .sidebar li {
-     margin: 15px 0;
- }
+.sidebar li {
+    margin: 12px 0;
+}
 
- .sidebar a {
-     color: white;
-     text-decoration: none;
-     transition: color 0.3s;
- }
+.sidebar a {
+    color: #d8d8d8;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.95rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
 
- .sidebar a:hover {
-     color: #f39c12;
- }
+.sidebar a:hover {
+    color: white;
+    background-color: #3e5166;
+}
 
- /* Main Content */
- .main-content {
-     margin-left: 250px;
-     padding: 40px;
-     width: calc(100% - 250px);
-     max-width: 900px;
- }
+.progress-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #3e5166;
+}
 
- .combo-section {
-     background: white;
-     padding: 30px;
-     border-radius: 8px;
-     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-     margin-bottom: 30px;
- }
+.progress-container h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #f8f8f8;
+}
 
- .combo-title {
-     color: #2c3e50;
-     border-bottom: 2px solid #f39c12;
-     padding-bottom: 10px;
- }
+.progress-item {
+    margin-bottom: 10px;
+}
 
- .combo-steps {
-     background: #f9f9f9;
-     padding: 15px;
-     border-left: 4px solid #f39c12;
-     margin: 20px 0;
- }
+.progress-item input {
+    margin-right: 8px;
+}
+
+.progress-item label {
+    font-size: 0.9rem;
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px;
+    padding: 40px;
+    width: calc(100% - 280px);
+    max-width: 900px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    color: #7f8c8d;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.combo-section {
+    margin-bottom: 40px;
+}
+
+.combo-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f39c12;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.subsection {
+    margin: 25px 0;
+}
+
+.subsection h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
 
 .combo-pecas {
-    background: #aac7d8;
+    background: #e8f4fc;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 20px 0;
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     justify-items: center;
+    border: 1px solid #d0e3f1;
 }
 
 .combo-pecas img {
     width: 120px;
     height: 94px;
     object-fit: contain;
+    background: white;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 /* ajuste para a ultima linha com 3 peças */
@@ -100,18 +168,113 @@
     }
 }
 
-  .combo-pecas2 {
-     background: #bbbbce;
-     padding: 20px;
-     border-radius: 5px;
-     margin: 20px 0;
-     text-align: center;
- }
+.tip-box {
+    background: #fff8e1;
+    padding: 15px 20px;
+    border-left: 4px solid #ffc107;
+    margin: 25px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.95rem;
+}
 
+.tip-box strong {
+    color: #e67e22;
+}
 
- .tip-box {
-     background: #fff8e1;
-     padding: 15px;
-     border-left: 4px solid #ffc107;
-     margin: 20px 0;
- }
+/* Checkboxes estilizadas */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #7f8c8d;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+    font-size: 14px;
+}
+
+.practice-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.game-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.game-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.game-card h3 {
+    color: #2c3e50;
+    margin: 15px 20px 10px;
+    font-size: 1.3rem;
+}
+
+.game-card p {
+    margin: 0 20px 15px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.link-button {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    padding: 8px 15px;
+    margin: 0 20px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.game-card:hover .link-button {
+    background: #e67e22;
+}
+
+@media (max-width: 700px) {
+    .practice-links {
+        grid-template-columns: 1fr;
+    }
+}
