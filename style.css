@@ -288,8 +288,23 @@ input[type="checkbox"]:checked::after {
 }
 
 .combo-pecas-exemplos img {
-    width: 150px; /* define um tamanho fixo  */
+    width: 160px; /* define um tamanho fixo  */
     height: auto; /* mantem a proporcao */
     object-fit: contain; /* Garante que a imagem não distorça */
-    border-radius: 5px; /* bordas levemente arredondadas */
+    border-radius: 2px; /* bordas levemente arredondadas */
+}
+.combo-pecas-exemplo {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    flex-wrap: wrap; /* permite que as imagens quebrem para a proxima linha */
+    gap: 15px; /* espaço entre as imagens  */
+    margin: 20px 0; /* margem para separar do conteudo */
+}
+
+.combo-pecas-exemplo img {
+    width: 100px; /* define um tamanho fixo  */
+    height: auto; /* mantem a proporcao */
+    object-fit: contain; /* Garante que a imagem não distorça */
+    border-radius: 2px; /* bordas levemente arredondadas */
 }
